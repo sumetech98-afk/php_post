@@ -1,19 +1,39 @@
-<!-- ===== PHP SECURITY POST - CYBERSUME BLACK EDITION WITH PROPER MARGINS ===== -->
+<!-- ===== PHP SECURITY POST - FULL SCREEN BLACK EDITION ===== -->
 <!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
 
 <style>
-    /* ===== MAIN WRAPPER WITH PROPER MARGINS ===== */
+    /* ===== FULL SCREEN WRAPPER ===== */
     .cyber-post-wrapper {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 20px 30px 40px;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
         background: #000000 !important;
         color: #ffffff;
-        border-radius: 0;
+        border-radius: 0 !important;
+        box-sizing: border-box;
     }
     
-    /* ===== RESPONSIVE MARGINS ===== */
+    /* ===== RESPONSIVE FULL SCREEN MARGINS ===== */
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper {
+            padding: 25px 35px 45px !important;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .cyber-post-wrapper {
+            padding: 22px 30px 40px !important;
+        }
+    }
+    
     @media (max-width: 768px) {
+        .cyber-post-wrapper {
+            padding: 18px 22px 35px !important;
+        }
+    }
+    
+    @media (max-width: 600px) {
         .cyber-post-wrapper {
             padding: 15px 18px 30px !important;
         }
@@ -25,55 +45,68 @@
         }
     }
     
+    /* ===== CONTENT MAX WIDTH (For readability) ===== */
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
     /* ===== POST HEADER ===== */
     .post-header-cyber {
-        margin-bottom: 35px;
-        padding-bottom: 20px;
+        margin-bottom: 40px;
+        padding-bottom: 25px;
         border-bottom: 1px solid rgba(0, 255, 136, 0.08);
         background: transparent;
     }
     
     .post-badge {
         display: inline-block;
-        padding: 5px 22px;
+        padding: 6px 26px;
         background: rgba(0, 255, 136, 0.08);
         border: 1px solid #00ff88;
         border-radius: 50px;
         color: #00ff88;
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase;
-        letter-spacing: 2.5px;
-        margin-bottom: 18px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
     }
     
     .post-title-cyber {
-        font-size: 36px;
+        font-size: 42px;
         font-weight: 900;
-        line-height: 1.2;
+        line-height: 1.15;
         color: #ffffff !important;
-        margin: 10px 0 16px;
+        margin: 12px 0 18px;
         letter-spacing: -0.5px;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber {
+            font-size: 34px;
+        }
     }
     
     @media (max-width: 768px) {
         .post-title-cyber {
-            font-size: 26px;
+            font-size: 28px;
         }
     }
     
     @media (max-width: 480px) {
         .post-title-cyber {
-            font-size: 22px;
+            font-size: 24px;
         }
     }
     
     .post-meta-cyber {
         display: flex;
         flex-wrap: wrap;
-        gap: 18px 25px;
-        font-size: 14px;
+        gap: 20px 30px;
+        font-size: 15px;
         color: #6a7290;
-        margin-top: 5px;
+        margin-top: 6px;
     }
     
     .post-meta-cyber span {
@@ -85,26 +118,26 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 30px;
+        gap: 35px;
         background: #0a0a0a !important;
         border: 1px solid rgba(0, 255, 136, 0.12);
-        border-radius: 16px;
-        padding: 28px 32px;
-        margin: 25px 0 35px;
+        border-radius: 18px;
+        padding: 32px 38px;
+        margin: 25px 0 38px;
     }
     
     @media (max-width: 768px) {
         .featured-box {
             flex-direction: column;
             text-align: center;
-            padding: 22px 20px;
-            gap: 20px;
+            padding: 25px 22px;
+            gap: 22px;
         }
     }
     
     @media (max-width: 480px) {
         .featured-box {
-            padding: 18px 14px;
+            padding: 20px 16px;
         }
     }
     
@@ -113,9 +146,9 @@
     }
     
     .featured-image img {
-        max-width: 200px;
+        max-width: 220px;
         height: auto;
-        border-radius: 12px;
+        border-radius: 14px;
         border: 2px solid #00ff88;
         transition: 0.3s;
         background: #000000;
@@ -123,13 +156,13 @@
     
     @media (max-width: 768px) {
         .featured-image img {
-            max-width: 160px;
+            max-width: 180px;
         }
     }
     
     @media (max-width: 480px) {
         .featured-image img {
-            max-width: 140px;
+            max-width: 150px;
         }
     }
     
@@ -145,19 +178,20 @@
     
     .featured-cta p {
         color: #b0b8c8 !important;
-        margin: 5px 0 10px !important;
+        margin: 5px 0 12px !important;
+        font-size: 16px;
     }
     
     .featured-cta a {
         display: inline-block;
-        padding: 14px 36px;
+        padding: 15px 42px;
         background: linear-gradient(135deg, #00ff88, #00cc77);
         color: #000000 !important;
         border-radius: 10px;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 16px;
         text-decoration: none;
-        margin-top: 5px;
+        margin-top: 6px;
         transition: all 0.3s ease;
         letter-spacing: 0.5px;
     }
@@ -169,17 +203,23 @@
     
     .featured-cta .small-note {
         color: #6a7290 !important;
-        font-size: 12px;
-        margin-top: 10px !important;
+        font-size: 13px;
+        margin-top: 12px !important;
     }
     
     /* ===== TABLE OF CONTENTS ===== */
     .toc-box {
         background: #0a0a0a !important;
         border: 1px solid rgba(0, 255, 136, 0.08);
-        border-radius: 14px;
-        padding: 22px 28px;
-        margin: 25px 0 35px;
+        border-radius: 16px;
+        padding: 24px 32px;
+        margin: 25px 0 38px;
+    }
+    
+    @media (max-width: 600px) {
+        .toc-box {
+            padding: 18px 20px;
+        }
     }
     
     @media (max-width: 480px) {
@@ -190,20 +230,26 @@
     
     .toc-box h3 {
         color: #00ff88 !important;
-        font-size: 18px;
-        margin-bottom: 14px;
+        font-size: 19px;
+        margin-bottom: 16px;
     }
     
     .toc-box ul {
         list-style: none;
         padding: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px 25px;
         margin: 0;
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+        .toc-box ul {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    @media (max-width: 480px) {
         .toc-box ul {
             grid-template-columns: 1fr;
             gap: 4px;
@@ -217,7 +263,7 @@
     .toc-box ul li a {
         color: #b0b8c8 !important;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 14.5px;
         transition: 0.3s;
         display: block;
     }
@@ -230,12 +276,12 @@
     /* ===== HEADINGS ===== */
     .cyber-post-wrapper h2 {
         color: #ffffff !important;
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 800;
-        margin-top: 40px;
-        margin-bottom: 18px;
-        border-left: 4px solid #00ff88;
-        padding-left: 18px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+        border-left: 5px solid #00ff88;
+        padding-left: 20px;
         line-height: 1.3;
     }
     
@@ -247,51 +293,70 @@
         border-left-color: #ffcc00;
     }
     
+    @media (max-width: 992px) {
+        .cyber-post-wrapper h2 {
+            font-size: 26px;
+        }
+    }
+    
     @media (max-width: 768px) {
         .cyber-post-wrapper h2 {
-            font-size: 22px;
-            padding-left: 14px;
-            margin-top: 30px;
-            margin-bottom: 14px;
+            font-size: 24px;
+            padding-left: 16px;
+            margin-top: 35px;
+            margin-bottom: 16px;
         }
     }
     
     @media (max-width: 480px) {
         .cyber-post-wrapper h2 {
-            font-size: 19px;
-            padding-left: 12px;
-            margin-top: 25px;
-            margin-bottom: 12px;
+            font-size: 20px;
+            padding-left: 14px;
+            margin-top: 28px;
+            margin-bottom: 14px;
         }
     }
     
     .cyber-post-wrapper h3 {
         color: #ff6b6b !important;
-        font-size: 21px;
+        font-size: 22px;
         font-weight: 700;
-        margin: 28px 0 12px;
+        margin: 30px 0 14px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h3 {
+            font-size: 19px;
+        }
     }
     
     @media (max-width: 480px) {
         .cyber-post-wrapper h3 {
-            font-size: 18px;
-            margin-top: 22px;
+            font-size: 17px;
+            margin-top: 24px;
         }
     }
     
     /* ===== PARAGRAPHS ===== */
     .cyber-post-wrapper p {
         color: #b0b8c8 !important;
-        font-size: 16.5px;
-        line-height: 1.9;
-        margin: 14px 0 18px;
+        font-size: 17px;
+        line-height: 1.95;
+        margin: 16px 0 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper p {
+            font-size: 16px;
+            line-height: 1.85;
+        }
     }
     
     @media (max-width: 480px) {
         .cyber-post-wrapper p {
             font-size: 15px;
             line-height: 1.8;
-            margin: 12px 0 15px;
+            margin: 14px 0 16px;
         }
     }
     
@@ -299,10 +364,10 @@
     .cyber-post-wrapper ul,
     .cyber-post-wrapper ol {
         color: #b0b8c8 !important;
-        font-size: 16.5px;
-        line-height: 2.2;
-        padding-left: 28px;
-        margin: 12px 0 20px;
+        font-size: 17px;
+        line-height: 2.3;
+        padding-left: 30px;
+        margin: 14px 0 22px;
     }
     
     .cyber-post-wrapper ul li,
@@ -311,27 +376,36 @@
         margin-bottom: 4px;
     }
     
+    @media (max-width: 768px) {
+        .cyber-post-wrapper ul,
+        .cyber-post-wrapper ol {
+            font-size: 16px;
+            padding-left: 26px;
+        }
+    }
+    
     @media (max-width: 480px) {
         .cyber-post-wrapper ul,
         .cyber-post-wrapper ol {
             font-size: 15px;
             padding-left: 22px;
-            line-height: 2;
+            line-height: 2.1;
         }
     }
     
     /* ===== CODE BLOCKS ===== */
     .code-block {
-        margin: 16px 0 24px;
-        border-radius: 12px;
+        margin: 18px 0 26px;
+        border-radius: 14px;
         overflow: hidden;
         background: #0a0a0a !important;
         border: 1px solid rgba(0, 255, 136, 0.08);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
     
     .code-header {
         background: #0d0d0d !important;
-        padding: 12px 20px;
+        padding: 14px 24px;
         border-bottom: 1px solid rgba(0, 255, 136, 0.06);
         display: flex;
         justify-content: space-between;
@@ -342,18 +416,18 @@
     
     .code-header span:first-child {
         color: #00ff88 !important;
-        font-size: 14px;
+        font-size: 14.5px;
         font-weight: 600;
     }
     
     .code-header span:last-child {
         color: #6a7290 !important;
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .code-block pre {
         background: #000000 !important;
-        padding: 22px 24px;
+        padding: 24px 28px;
         border-radius: 0;
         overflow-x: auto;
         margin: 0;
@@ -363,9 +437,18 @@
     .code-block pre code {
         color: #b0b8c8 !important;
         font-family: 'Courier New', 'Consolas', monospace;
-        font-size: 14px;
-        line-height: 1.9;
+        font-size: 15px;
+        line-height: 1.95;
         background: transparent !important;
+    }
+    
+    @media (max-width: 768px) {
+        .code-block pre {
+            padding: 18px 20px;
+        }
+        .code-block pre code {
+            font-size: 14px;
+        }
     }
     
     @media (max-width: 480px) {
@@ -374,70 +457,73 @@
         }
         .code-block pre code {
             font-size: 12.5px;
-            line-height: 1.8;
+            line-height: 1.85;
         }
         .code-header {
-            padding: 10px 14px;
+            padding: 12px 14px;
         }
         .code-header span:first-child {
-            font-size: 12px;
+            font-size: 12.5px;
+        }
+        .code-header span:last-child {
+            font-size: 11px;
         }
     }
     
     /* ===== ALERT BOXES ===== */
     .alert-danger {
         background: rgba(255, 107, 107, 0.06) !important;
-        border-left: 4px solid #ff6b6b;
-        padding: 16px 22px;
-        margin: 16px 0 22px;
-        border-radius: 0 10px 10px 0;
+        border-left: 5px solid #ff6b6b;
+        padding: 18px 24px;
+        margin: 18px 0 24px;
+        border-radius: 0 12px 12px 0;
     }
     
     .alert-danger p {
         color: #ff6b6b !important;
-        font-size: 14.5px;
+        font-size: 15px;
         margin: 0 !important;
     }
     
     .alert-success {
         background: rgba(0, 255, 136, 0.05) !important;
-        border-left: 4px solid #00ff88;
-        padding: 16px 22px;
-        margin: 16px 0 22px;
-        border-radius: 0 10px 10px 0;
+        border-left: 5px solid #00ff88;
+        padding: 18px 24px;
+        margin: 18px 0 24px;
+        border-radius: 0 12px 12px 0;
     }
     
     .alert-success p {
         color: #00ff88 !important;
-        font-size: 14.5px;
+        font-size: 15px;
         margin: 0 !important;
     }
     
     .alert-warning {
         background: rgba(255, 204, 0, 0.05) !important;
-        border-left: 4px solid #ffcc00;
-        padding: 18px 24px;
-        margin: 22px 0 28px;
-        border-radius: 0 10px 10px 0;
+        border-left: 5px solid #ffcc00;
+        padding: 20px 26px;
+        margin: 24px 0 30px;
+        border-radius: 0 12px 12px 0;
     }
     
     .alert-warning p {
         color: #ffcc00 !important;
-        font-size: 14.5px;
+        font-size: 15px;
         margin: 0 !important;
     }
     
     .alert-info {
         background: rgba(0, 217, 255, 0.05) !important;
-        border-left: 4px solid #00d9ff;
-        padding: 16px 22px;
-        margin: 16px 0 22px;
-        border-radius: 0 10px 10px 0;
+        border-left: 5px solid #00d9ff;
+        padding: 18px 24px;
+        margin: 18px 0 24px;
+        border-radius: 0 12px 12px 0;
     }
     
     .alert-info p {
         color: #00d9ff !important;
-        font-size: 14.5px;
+        font-size: 15px;
         margin: 0 !important;
     }
     
@@ -456,10 +542,11 @@
         width: 100%;
         border-collapse: collapse;
         background: #0a0a0a !important;
-        border-radius: 12px;
+        border-radius: 14px;
         overflow: hidden;
         border: 1px solid rgba(0, 255, 136, 0.08);
-        margin: 18px 0 25px;
+        margin: 20px 0 28px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
     
     .cyber-post-wrapper table thead tr {
@@ -467,10 +554,10 @@
     }
     
     .cyber-post-wrapper table thead tr th {
-        padding: 14px 20px;
+        padding: 16px 24px;
         text-align: left;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 15.5px;
         color: #000000 !important;
     }
     
@@ -483,9 +570,9 @@
     }
     
     .cyber-post-wrapper table tbody tr td {
-        padding: 13px 20px;
+        padding: 14px 24px;
         color: #b0b8c8 !important;
-        font-size: 15px;
+        font-size: 15.5px;
     }
     
     .cyber-post-wrapper table tbody tr td:first-child {
@@ -494,11 +581,22 @@
         font-weight: 600;
     }
     
+    @media (max-width: 768px) {
+        .cyber-post-wrapper table thead tr th {
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+        .cyber-post-wrapper table tbody tr td {
+            padding: 12px 18px;
+            font-size: 14px;
+        }
+    }
+    
     @media (max-width: 600px) {
         .cyber-post-wrapper table tbody tr td,
         .cyber-post-wrapper table thead tr th {
             padding: 10px 14px;
-            font-size: 13.5px;
+            font-size: 13px;
         }
     }
     
@@ -506,7 +604,7 @@
         .cyber-post-wrapper table tbody tr td,
         .cyber-post-wrapper table thead tr th {
             padding: 8px 10px;
-            font-size: 12.5px;
+            font-size: 12px;
         }
     }
     
@@ -514,39 +612,39 @@
     .cyber-post-wrapper hr {
         border: none;
         border-top: 1px solid rgba(0, 255, 136, 0.06);
-        margin: 28px 0 30px;
+        margin: 30px 0 32px;
         background: transparent;
         height: 1px;
     }
     
     /* ===== SHARE SECTION ===== */
     .share-section {
-        margin-top: 45px;
-        padding-top: 28px;
+        margin-top: 50px;
+        padding-top: 30px;
         border-top: 1px solid rgba(0, 255, 136, 0.08);
     }
     
     .share-section p {
         color: #6a7290 !important;
-        font-size: 14px;
+        font-size: 15px;
         text-align: center;
-        margin-bottom: 14px !important;
+        margin-bottom: 16px !important;
     }
     
     .share-buttons {
         display: flex;
-        gap: 14px;
+        gap: 16px;
         justify-content: center;
         flex-wrap: wrap;
     }
     
     .share-buttons a {
-        padding: 10px 24px;
+        padding: 12px 28px;
         border: 1px solid rgba(0, 255, 136, 0.12);
         border-radius: 10px;
         color: #b0b8c8 !important;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
         transition: 0.3s;
         background: transparent;
@@ -561,12 +659,12 @@
     
     @media (max-width: 480px) {
         .share-buttons a {
-            padding: 8px 16px;
+            padding: 10px 18px;
             font-size: 13px;
         }
         .share-section {
-            margin-top: 30px;
-            padding-top: 20px;
+            margin-top: 35px;
+            padding-top: 22px;
         }
     }
     
@@ -588,322 +686,359 @@
     .cyber-post-wrapper img {
         max-width: 100%;
         height: auto;
-        border-radius: 10px;
-        margin: 16px 0;
+        border-radius: 12px;
+        margin: 18px 0;
         border: 1px solid rgba(0, 255, 136, 0.05);
     }
     
     /* ===== INLINE CODE ===== */
     .cyber-post-wrapper code:not(pre code) {
         background: #0a0a0a;
-        padding: 2px 10px;
+        padding: 2px 12px;
         border-radius: 4px;
         color: #00ff88;
         border: 1px solid rgba(0, 255, 136, 0.08);
-        font-size: 14px;
+        font-size: 14.5px;
         font-family: 'Courier New', monospace;
     }
     
     @media (max-width: 480px) {
         .cyber-post-wrapper code:not(pre code) {
-            font-size: 12.5px;
+            font-size: 13px;
             padding: 1px 8px;
         }
+    }
+    
+    /* ===== BLOGGER CONTAINER OVERRIDE ===== */
+    .blog-posts {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    .post-body {
+        padding: 0 !important;
+        background: #000000 !important;
+    }
+    
+    .post-body-content {
+        background: #000000 !important;
+        padding: 0 !important;
+    }
+    
+    /* ===== FULL SCREEN FIX FOR BLOGGER ===== */
+    .post-outer {
+        background: #000000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .post {
+        background: #000000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
     }
 </style>
 
 <!-- ===== MAIN CONTENT ===== -->
 <div class="cyber-post-wrapper">
 
-    <!-- ===== POST HEADER ===== -->
-    <div class="post-header-cyber">
-        <div class="post-badge">🔒 Security Series</div>
-        <h1 class="post-title-cyber">PHP Programming for Ethical Hackers: Understanding Web Security Through Code</h1>
-        <div class="post-meta-cyber">
-            <span>📅 <script>document.write(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));</script></span>
-            <span>✍️ CyberSume Team</span>
-            <span>⏱️ 8 min read</span>
-            <span>🏷️ PHP, Web Security, Ethical Hacking</span>
-        </div>
-    </div>
+    <div class="cyber-content">
 
-    <!-- ===== FEATURED IMAGE WITH AMAZON LINK ===== -->
-    <div class="featured-box">
-        <div class="featured-image">
-            <a href="https://www.amazon.com/dp/B0HBD24TGY" target="_blank" rel="noopener">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmkhK-OHx-EJkFY4aM0ddLOuMwDN1MDNhhgct-Ck6fPGoXktnnjVCWZm8raRuBwZBviBQQg5Kxxml-zGk3IABsWGGlFSZ3wBGd4xMtFUJJ6qMBcoYkIhRBMQNgtMteRiDE2teIZxnOUvciuzWEhHYn3eO_8eiz4aFdfD_3rCYn5hntitqxSBzav0lbfuy7/s320/ChatGPT%20Image%20Jul%2024,%202026,%2010_04_56%20PM.png" 
-                     alt="PHP Programming for Ethical Hackers Book"/>
-            </a>
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">🔒 Security Series</div>
+            <h1 class="post-title-cyber">PHP Programming for Ethical Hackers: Understanding Web Security Through Code</h1>
+            <div class="post-meta-cyber">
+                <span>📅 <script>document.write(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));</script></span>
+                <span>✍️ CyberSume Team</span>
+                <span>⏱️ 8 min read</span>
+                <span>🏷️ PHP, Web Security, Ethical Hacking</span>
+            </div>
         </div>
-        <div class="featured-cta">
-            <p>📚 <strong style="color:#00ff88;">Get the Complete Guide</strong></p>
-            <a href="https://www.amazon.com/dp/B0HBD24TGY" target="_blank" rel="noopener">
-                🛒 Pay ₹300 & Download Now
-            </a>
-            <p class="small-note">Click on the book image or button above</p>
+
+        <!-- ===== FEATURED IMAGE WITH AMAZON LINK ===== -->
+        <div class="featured-box">
+            <div class="featured-image">
+                <a href="https://www.amazon.com/dp/B0HBD24TGY" target="_blank" rel="noopener">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmkhK-OHx-EJkFY4aM0ddLOuMwDN1MDNhhgct-Ck6fPGoXktnnjVCWZm8raRuBwZBviBQQg5Kxxml-zGk3IABsWGGlFSZ3wBGd4xMtFUJJ6qMBcoYkIhRBMQNgtMteRiDE2teIZxnOUvciuzWEhHYn3eO_8eiz4aFdfD_3rCYn5hntitqxSBzav0lbfuy7/s320/ChatGPT%20Image%20Jul%2024,%202026,%2010_04_56%20PM.png" 
+                         alt="PHP Programming for Ethical Hackers Book"/>
+                </a>
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#00ff88;">Get the Complete Guide</strong></p>
+                <a href="https://www.amazon.com/dp/B0HBD24TGY" target="_blank" rel="noopener">
+                    🛒 Pay ₹300 & Download Now
+                </a>
+                <p class="small-note">Click on the book image or button above</p>
+            </div>
         </div>
-    </div>
 
-    <hr/>
+        <hr/>
 
-    <!-- ===== TABLE OF CONTENTS ===== -->
-    <div class="toc-box">
-        <h3>📑 Table of Contents</h3>
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <div class="toc-box">
+            <h3>📑 Table of Contents</h3>
+            <ul>
+                <li><a href="#intro">→ Introduction</a></li>
+                <li><a href="#why">→ Why Learn PHP</a></li>
+                <li><a href="#basics">→ PHP Basics</a></li>
+                <li><a href="#vuln">→ Security Vulnerabilities</a></li>
+                <li><a href="#best">→ Best Practices</a></li>
+                <li><a href="#functions">→ Security Functions</a></li>
+                <li><a href="#path">→ Learning Path</a></li>
+                <li><a href="#final">→ Final Thoughts</a></li>
+            </ul>
+        </div>
+
+        <!-- ===== INTRODUCTION ===== -->
+        <h2 id="intro">Introduction</h2>
+        <p>
+            PHP has been one of the most widely used server-side programming languages for over two decades. 
+            From small personal websites to large-scale web applications, PHP powers a significant portion of the internet. 
+            For ethical hackers and cybersecurity professionals, learning PHP is valuable because many real-world web applications are built with it.
+        </p>
+        <p>
+            Understanding how PHP works helps security professionals identify vulnerabilities, perform security assessments, and recommend effective fixes.
+        </p>
+
+        <!-- ===== WHY LEARN PHP ===== -->
+        <h2 id="why">Why Ethical Hackers Should Learn PHP</h2>
+        <p>
+            Many organizations still rely on PHP frameworks such as Laravel, CodeIgniter, Symfony, and WordPress. 
+            Security professionals who understand PHP can:
+        </p>
         <ul>
-            <li><a href="#intro">→ Introduction</a></li>
-            <li><a href="#why">→ Why Learn PHP</a></li>
-            <li><a href="#basics">→ PHP Basics</a></li>
-            <li><a href="#vuln">→ Security Vulnerabilities</a></li>
-            <li><a href="#best">→ Best Practices</a></li>
-            <li><a href="#functions">→ Security Functions</a></li>
-            <li><a href="#path">→ Learning Path</a></li>
-            <li><a href="#final">→ Final Thoughts</a></li>
+            <li>Analyze source code for security flaws.</li>
+            <li>Identify insecure coding practices.</li>
+            <li>Perform better web application penetration testing.</li>
+            <li>Understand server-side logic.</li>
+            <li>Recommend secure coding improvements.</li>
         </ul>
-    </div>
-
-    <!-- ===== INTRODUCTION ===== -->
-    <h2 id="intro">Introduction</h2>
-    <p>
-        PHP has been one of the most widely used server-side programming languages for over two decades. 
-        From small personal websites to large-scale web applications, PHP powers a significant portion of the internet. 
-        For ethical hackers and cybersecurity professionals, learning PHP is valuable because many real-world web applications are built with it.
-    </p>
-    <p>
-        Understanding how PHP works helps security professionals identify vulnerabilities, perform security assessments, and recommend effective fixes.
-    </p>
-
-    <!-- ===== WHY LEARN PHP ===== -->
-    <h2 id="why">Why Ethical Hackers Should Learn PHP</h2>
-    <p>
-        Many organizations still rely on PHP frameworks such as Laravel, CodeIgniter, Symfony, and WordPress. 
-        Security professionals who understand PHP can:
-    </p>
-    <ul>
-        <li>Analyze source code for security flaws.</li>
-        <li>Identify insecure coding practices.</li>
-        <li>Perform better web application penetration testing.</li>
-        <li>Understand server-side logic.</li>
-        <li>Recommend secure coding improvements.</li>
-    </ul>
-    <div class="alert-info">
-        <p>💡 <strong>Pro Tip:</strong> Knowledge of PHP allows ethical hackers to think like developers, making vulnerability discovery more effective.</p>
-    </div>
-
-    <!-- ===== PHP BASICS ===== -->
-    <h2 id="basics">PHP Basics</h2>
-
-    <div class="code-block">
-        <div class="code-header">
-            <span>📄 example.php</span>
-            <span>Hello World</span>
+        <div class="alert-info">
+            <p>💡 <strong>Pro Tip:</strong> Knowledge of PHP allows ethical hackers to think like developers, making vulnerability discovery more effective.</p>
         </div>
-        <pre><code>&lt;?php
+
+        <!-- ===== PHP BASICS ===== -->
+        <h2 id="basics">PHP Basics</h2>
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>📄 example.php</span>
+                <span>Hello World</span>
+            </div>
+            <pre><code>&lt;?php
 echo "Hello, Security!";
 ?&gt;</code></pre>
-    </div>
-
-    <div class="code-block">
-        <div class="code-header">
-            <span>📄 variables.php</span>
-            <span>Variables</span>
         </div>
-        <pre><code>&lt;?php
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>📄 variables.php</span>
+                <span>Variables</span>
+            </div>
+            <pre><code>&lt;?php
 $username = "admin";
 $password = "secret";
 ?&gt;</code></pre>
-    </div>
-
-    <div class="code-block">
-        <div class="code-header">
-            <span>📄 conditional.php</span>
-            <span>Conditional</span>
         </div>
-        <pre><code>&lt;?php
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>📄 conditional.php</span>
+                <span>Conditional</span>
+            </div>
+            <pre><code>&lt;?php
 if ($username == "admin") {
     echo "Administrator";
 }
 ?&gt;</code></pre>
-    </div>
-
-    <div class="code-block">
-        <div class="code-header">
-            <span>📄 function.php</span>
-            <span>Functions</span>
         </div>
-        <pre><code>&lt;?php
+
+        <div class="code-block">
+            <div class="code-header">
+                <span>📄 function.php</span>
+                <span>Functions</span>
+            </div>
+            <pre><code>&lt;?php
 function greet($name) {
     return "Hello " . $name;
 }
 ?&gt;</code></pre>
-    </div>
-
-    <!-- ===== SECURITY VULNERABILITIES ===== -->
-    <h2 id="vuln">Common Security Vulnerabilities in PHP Applications</h2>
-
-    <h3>1. SQL Injection</h3>
-    <p><strong style="color:#ff6b6b;">Unsafe example:</strong></p>
-    <div class="code-block">
-        <pre><code>$id = $_GET['id'];
-$query = "SELECT * FROM users WHERE id = '$id'";</code></pre>
-    </div>
-    <div class="alert-danger">
-        <p>⚠️ This directly inserts user input into the SQL query — <strong>High Risk</strong></p>
-    </div>
-
-    <p><strong style="color:#00ff88;">Secure approach:</strong></p>
-    <div class="code-block">
-        <pre><code>$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
-$stmt->execute([$id]);</code></pre>
-    </div>
-    <div class="alert-success">
-        <p>✅ Using prepared statements helps prevent SQL injection</p>
-    </div>
-
-    <hr/>
-
-    <h3>2. Cross-Site Scripting (XSS)</h3>
-    <p><strong style="color:#ff6b6b;">Unsafe output:</strong></p>
-    <div class="code-block">
-        <pre><code>echo $_GET['name'];</code></pre>
-    </div>
-
-    <p><strong style="color:#00ff88;">Secure output:</strong></p>
-    <div class="code-block">
-        <pre><code>echo htmlspecialchars($_GET['name'], ENT_QUOTES, 'UTF-8');</code></pre>
-    </div>
-    <div class="alert-success">
-        <p>✅ Proper output encoding prevents malicious scripts from executing in users' browsers</p>
-    </div>
-
-    <hr/>
-
-    <h3>3. File Upload Validation</h3>
-    <p><strong style="color:#ff6b6b;">Unsafe:</strong></p>
-    <div class="code-block">
-        <pre><code>move_uploaded_file($_FILES['file']['tmp_name'], "uploads/" . $_FILES['file']['name']);</code></pre>
-    </div>
-
-    <p><strong style="color:#ffcc00;">Better practice:</strong></p>
-    <ul>
-        <li>Restrict allowed file types.</li>
-        <li>Verify MIME types.</li>
-        <li>Rename uploaded files.</li>
-        <li>Store uploads outside the web root when possible.</li>
-        <li>Enforce file size limits.</li>
-    </ul>
-
-    <hr/>
-
-    <h3>4. Password Storage</h3>
-    <div class="alert-danger">
-        <p>⚠️ Never store passwords in plain text.</p>
-    </div>
-    <p><strong style="color:#00ff88;">Correct approach:</strong></p>
-    <div class="code-block">
-        <pre><code>$passwordHash = password_hash($password, PASSWORD_DEFAULT);</code></pre>
-    </div>
-    <p>Verify during login:</p>
-    <div class="code-block">
-        <pre><code>password_verify($password, $passwordHash);</code></pre>
-    </div>
-
-    <!-- ===== BEST PRACTICES ===== -->
-    <h2 id="best">Secure Coding Best Practices</h2>
-    <ul>
-        <li>Validate all user input.</li>
-        <li>Sanitize output before displaying it.</li>
-        <li>Use prepared SQL statements.</li>
-        <li>Implement CSRF protection.</li>
-        <li>Keep PHP and dependencies updated.</li>
-        <li>Disable unnecessary error messages in production.</li>
-        <li>Use HTTPS for all sensitive communications.</li>
-        <li>Apply least-privilege principles for database accounts.</li>
-        <li>Log security events without exposing sensitive information.</li>
-    </ul>
-
-    <!-- ===== SECURITY FUNCTIONS ===== -->
-    <h2 id="functions">Useful PHP Security Functions</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Function</th>
-                <th>Purpose</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>password_hash()</td>
-                <td>Secure password hashing</td>
-            </tr>
-            <tr>
-                <td>password_verify()</td>
-                <td>Verify hashed passwords</td>
-            </tr>
-            <tr>
-                <td>htmlspecialchars()</td>
-                <td>Prevent XSS</td>
-            </tr>
-            <tr>
-                <td>filter_var()</td>
-                <td>Validate and sanitize input</td>
-            </tr>
-            <tr>
-                <td>random_bytes()</td>
-                <td>Generate cryptographically secure random data</td>
-            </tr>
-            <tr>
-                <td>hash_equals()</td>
-                <td>Safe string comparison</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- ===== LEARNING PATH ===== -->
-    <h2 id="path">Learning Path</h2>
-    <p>
-        If you're starting with PHP for security, consider this progression:
-    </p>
-    <ol>
-        <li>Learn PHP syntax and language fundamentals.</li>
-        <li>Build simple CRUD applications.</li>
-        <li>Learn MySQL with PDO.</li>
-        <li>Understand HTTP requests and sessions.</li>
-        <li>Study authentication and authorization.</li>
-        <li>Learn common web vulnerabilities (OWASP Top 10).</li>
-        <li>Practice reviewing intentionally vulnerable applications in safe lab environments.</li>
-        <li>Explore secure frameworks like Laravel.</li>
-    </ol>
-
-    <!-- ===== FINAL THOUGHTS ===== -->
-    <h2 id="final">Final Thoughts</h2>
-    <p>
-        PHP remains one of the most important languages in web development. For ethical hackers, 
-        understanding PHP isn't about exploiting systems—it's about understanding how applications 
-        are built so vulnerabilities can be identified responsibly and fixed effectively.
-    </p>
-    <p>
-        The strongest security professionals combine programming knowledge with security principles. 
-        Learning secure PHP development will improve your ability to audit applications, communicate 
-        with developers, and help build safer web software.
-    </p>
-    <div class="alert-warning">
-        <p>⚡ <strong>Always perform security testing only on systems you own or have explicit authorization to assess.</strong></p>
-    </div>
-
-    <!-- ===== SHARE SECTION ===== -->
-    <div class="share-section">
-        <p>📤 Share this post with your network</p>
-        <div class="share-buttons">
-            <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=PHP%20Programming%20for%20Ethical%20Hackers%20-%20A%20Must-Read%20Guide!%20%23CyberSecurity%20%23PHP%20%23EthicalHacking','_blank');return false;">
-                🐦 Twitter
-            </a>
-            <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
-                📘 Facebook
-            </a>
-            <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
-                💼 LinkedIn
-            </a>
         </div>
+
+        <!-- ===== SECURITY VULNERABILITIES ===== -->
+        <h2 id="vuln">Common Security Vulnerabilities in PHP Applications</h2>
+
+        <h3>1. SQL Injection</h3>
+        <p><strong style="color:#ff6b6b;">Unsafe example:</strong></p>
+        <div class="code-block">
+            <pre><code>$id = $_GET['id'];
+$query = "SELECT * FROM users WHERE id = '$id'";</code></pre>
+        </div>
+        <div class="alert-danger">
+            <p>⚠️ This directly inserts user input into the SQL query — <strong>High Risk</strong></p>
+        </div>
+
+        <p><strong style="color:#00ff88;">Secure approach:</strong></p>
+        <div class="code-block">
+            <pre><code>$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+$stmt->execute([$id]);</code></pre>
+        </div>
+        <div class="alert-success">
+            <p>✅ Using prepared statements helps prevent SQL injection</p>
+        </div>
+
+        <hr/>
+
+        <h3>2. Cross-Site Scripting (XSS)</h3>
+        <p><strong style="color:#ff6b6b;">Unsafe output:</strong></p>
+        <div class="code-block">
+            <pre><code>echo $_GET['name'];</code></pre>
+        </div>
+
+        <p><strong style="color:#00ff88;">Secure output:</strong></p>
+        <div class="code-block">
+            <pre><code>echo htmlspecialchars($_GET['name'], ENT_QUOTES, 'UTF-8');</code></pre>
+        </div>
+        <div class="alert-success">
+            <p>✅ Proper output encoding prevents malicious scripts from executing in users' browsers</p>
+        </div>
+
+        <hr/>
+
+        <h3>3. File Upload Validation</h3>
+        <p><strong style="color:#ff6b6b;">Unsafe:</strong></p>
+        <div class="code-block">
+            <pre><code>move_uploaded_file($_FILES['file']['tmp_name'], "uploads/" . $_FILES['file']['name']);</code></pre>
+        </div>
+
+        <p><strong style="color:#ffcc00;">Better practice:</strong></p>
+        <ul>
+            <li>Restrict allowed file types.</li>
+            <li>Verify MIME types.</li>
+            <li>Rename uploaded files.</li>
+            <li>Store uploads outside the web root when possible.</li>
+            <li>Enforce file size limits.</li>
+        </ul>
+
+        <hr/>
+
+        <h3>4. Password Storage</h3>
+        <div class="alert-danger">
+            <p>⚠️ Never store passwords in plain text.</p>
+        </div>
+        <p><strong style="color:#00ff88;">Correct approach:</strong></p>
+        <div class="code-block">
+            <pre><code>$passwordHash = password_hash($password, PASSWORD_DEFAULT);</code></pre>
+        </div>
+        <p>Verify during login:</p>
+        <div class="code-block">
+            <pre><code>password_verify($password, $passwordHash);</code></pre>
+        </div>
+
+        <!-- ===== BEST PRACTICES ===== -->
+        <h2 id="best">Secure Coding Best Practices</h2>
+        <ul>
+            <li>Validate all user input.</li>
+            <li>Sanitize output before displaying it.</li>
+            <li>Use prepared SQL statements.</li>
+            <li>Implement CSRF protection.</li>
+            <li>Keep PHP and dependencies updated.</li>
+            <li>Disable unnecessary error messages in production.</li>
+            <li>Use HTTPS for all sensitive communications.</li>
+            <li>Apply least-privilege principles for database accounts.</li>
+            <li>Log security events without exposing sensitive information.</li>
+        </ul>
+
+        <!-- ===== SECURITY FUNCTIONS ===== -->
+        <h2 id="functions">Useful PHP Security Functions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Function</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>password_hash()</td>
+                    <td>Secure password hashing</td>
+                </tr>
+                <tr>
+                    <td>password_verify()</td>
+                    <td>Verify hashed passwords</td>
+                </tr>
+                <tr>
+                    <td>htmlspecialchars()</td>
+                    <td>Prevent XSS</td>
+                </tr>
+                <tr>
+                    <td>filter_var()</td>
+                    <td>Validate and sanitize input</td>
+                </tr>
+                <tr>
+                    <td>random_bytes()</td>
+                    <td>Generate cryptographically secure random data</td>
+                </tr>
+                <tr>
+                    <td>hash_equals()</td>
+                    <td>Safe string comparison</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ===== LEARNING PATH ===== -->
+        <h2 id="path">Learning Path</h2>
+        <p>
+            If you're starting with PHP for security, consider this progression:
+        </p>
+        <ol>
+            <li>Learn PHP syntax and language fundamentals.</li>
+            <li>Build simple CRUD applications.</li>
+            <li>Learn MySQL with PDO.</li>
+            <li>Understand HTTP requests and sessions.</li>
+            <li>Study authentication and authorization.</li>
+            <li>Learn common web vulnerabilities (OWASP Top 10).</li>
+            <li>Practice reviewing intentionally vulnerable applications in safe lab environments.</li>
+            <li>Explore secure frameworks like Laravel.</li>
+        </ol>
+
+        <!-- ===== FINAL THOUGHTS ===== -->
+        <h2 id="final">Final Thoughts</h2>
+        <p>
+            PHP remains one of the most important languages in web development. For ethical hackers, 
+            understanding PHP isn't about exploiting systems—it's about understanding how applications 
+            are built so vulnerabilities can be identified responsibly and fixed effectively.
+        </p>
+        <p>
+            The strongest security professionals combine programming knowledge with security principles. 
+            Learning secure PHP development will improve your ability to audit applications, communicate 
+            with developers, and help build safer web software.
+        </p>
+        <div class="alert-warning">
+            <p>⚡ <strong>Always perform security testing only on systems you own or have explicit authorization to assess.</strong></p>
+        </div>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this post with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=PHP%20Programming%20for%20Ethical%20Hackers%20-%20A%20Must-Read%20Guide!%20%23CyberSecurity%20%23PHP%20%23EthicalHacking','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
     </div>
 
 </div>
